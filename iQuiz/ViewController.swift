@@ -27,8 +27,5 @@ class ViewController: UIViewController {
         controller.addAction(action)
         self.presentViewController(controller, animated: true, completion: nil)
     }
-    
-
-
 }
 
