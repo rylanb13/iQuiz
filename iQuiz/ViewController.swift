@@ -19,6 +19,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func settingsPressed(sender: AnyObject) {
+        let controller = UIAlertController(title: "Settings", message: "Settings go here", preferredStyle: .Alert)
+        let action = UIAlertAction(title: "OK",
+            style: .Default, handler: nil)
+        controller.addAction(action)
+        self.presentViewController(controller, animated: true, completion: nil)
+    }
+    
 
 
 }
